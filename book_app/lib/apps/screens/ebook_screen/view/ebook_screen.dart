@@ -118,7 +118,7 @@ class _DataBookState extends State<DataBook> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 320,
+      height: 325,
       child: ListView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: bookList.length,
@@ -165,10 +165,9 @@ class _DataBookState extends State<DataBook> {
                         ),
                         const SizedBox(height: 5),
                         Text(
-                          '\$ ${bookList[index].price.toString()}',
-                          style: TextStyle(color: Colors.grey[800]),
-                          textAlign: TextAlign.start,
-                          maxLines: 1,
+                          '\$${bookList[index].price.toString()}',
+                          style:
+                              TextStyle(color: Colors.grey[800], fontSize: 13),
                         ),
                       ],
                     ),
