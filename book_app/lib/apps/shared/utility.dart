@@ -1,0 +1,18 @@
+// ignore_for_file: file_names
+
+class Utility {
+  static bool isNullEmptyOrFalse(Object? o) {
+    return o == null ||
+        o == "0.0" ||
+        o == "0" ||
+        o == 0 ||
+        false == o ||
+        "" == o ||
+        "null" == o ||
+        "false" == o;
+  }
+
+  static bool isNotNullEmptyOrFalse(Object? o) {
+    return !isNullEmptyOrFalse(o);
+  }
+}
